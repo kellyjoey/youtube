@@ -11,7 +11,7 @@
 
 
  function getPlaylistItems() {
- var request = gapi.client.youtube.playlistItems.list({
+ var request = gapi.client.youtube.search.list({
  q: 'cats',
  part: 'snippet, id'
  
