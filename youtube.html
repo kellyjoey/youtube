@@ -40,6 +40,8 @@
  $('#video-container').append('<p><img src="' + thumbnail + '" /></p>');
  $('#video-container').append('<p>' + title + '</p>');
  $('#video-container').append('<p>' + id + '</p>');
+ $('#video-container').append('<iframe src=' + thumbnail + "</iframe>")
+ // <iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PL3f0O-D3NXi_LOrQBYWyvNZbaGQKS6gnq" frameborder="0" allowfullscreen></iframe>
  }
 
 
@@ -64,7 +66,7 @@
  <div id="results"></div>
 
  <div id="video-container">
- <iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PL3f0O-D3NXi_LOrQBYWyvNZbaGQKS6gnq" frameborder="0" allowfullscreen></iframe>
+ <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PL3f0O-D3NXi_LOrQBYWyvNZbaGQKS6gnq" frameborder="0" allowfullscreen></iframe> -->
  </div>
 </body>
 </html>
