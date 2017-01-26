@@ -34,13 +34,14 @@
  function displayResult(videoSnippet, videoId) {
  var title = videoSnippet.title;
  var thumbnail = videoSnippet.thumbnails.default.url;
+ var etag = videoSnipper.etag;
  var id = videoId;
 
 
  $('#video-container').append('<p><img src="' + thumbnail + '" /></p>');
  $('#video-container').append('<p>' + title + '</p>');
  $('#video-container').append('<p>' + id + '</p>');
- $('#video-container').append('<iframe src=' + etag + "</iframe>")
+ $('#video-container').append('<iframe src=http://www.youtube.com/' + etag + "</iframe>")
  // <iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PL3f0O-D3NXi_LOrQBYWyvNZbaGQKS6gnq" frameborder="0" allowfullscreen></iframe>
  }
 
