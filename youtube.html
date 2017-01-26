@@ -18,7 +18,7 @@
  });
  
  request.execute(function (response) {
- 	console.log(response);
+ 	
  var playlistItems = response.result.items;
  if (playlistItems) {
  $.each(playlistItems, function (index, item) {
@@ -34,7 +34,8 @@
  function displayResult(videoSnippet, videoId) {
  var title = videoSnippet.title;
  var thumbnail = videoSnippet.thumbnails.default.url;
- var etag = videoSnippet.etag;
+ console.log(videoSnippet);
+ console.log(videoId)
  var id = videoId;
 
 
